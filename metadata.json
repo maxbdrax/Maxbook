@@ -1,0 +1,6 @@
+{
+  "name": "MaxBook",
+  "description": "A modern, premium social media platform to connect, share, and grow with rich feed, stories, messenger, watch, groups, marketplace, and creator tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
