@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxBook (ম্যাক্সবুক) - পরবর্তী প্রজন্মের সোশ্যাল নেটওয়ার্ক ও ইনকাম হাব</title>
+    <meta name="description" content="ম্যাক্সবুক (MaxBook) - বিকাশ, নগদ ও রকেট ওয়ালেট ইন্টিগ্রেশন, ৫কে ফলোয়ারে মনিটাইজেশন, ব্লু ব্যাজ ভেরিফিকেশন এবং পোস্ট বুস্টিং সুবিধা সম্বলিত আধুনিক সোশ্যাল মিডিয়া অ্যাপ।">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1877F2',
+                        secondary: '#10B981',
+                        accent: '#8B5CF6',
+                        dark: '#0F172A',
+                        darker: '#090D16'
+                    },
+                    fontFamily: {
+                        sans: ['"Hind Siliguri"', '"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+            background-color: #090D16;
+            color: #F8FAFC;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #1877F2 0%, #10B981 50%, #8B5CF6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glow-circle {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen overflow-x-hidden relative selection:bg-primary selection:text-white">
+
+    <!-- Background Glow Effects -->
+    <div class="glow-circle w-96 h-96 bg-primary/20 top-0 left-1/4"></div>
+    <div class="glow-circle w-96 h-96 bg-secondary/15 top-1/3 right-10"></div>
+    <div class="glow-circle w-96 h-96 bg-accent/20 bottom-10 left-1/3"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-card bg-darker/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-primary to-accent flex items-center justify-center shadow-lg shadow-primary/25 font-black text-2xl text-white">
+                    M
+                </div>
+                <div>
+                    <span class="text-2xl font-black tracking-tight text-white">Max<span class="text-primary">Book</span></span>
+                    <span class="ml-2 text-xs bg-primary/20 text-primary px-2 py-0.5 rounded-full font-bold border border-primary/30">Official App</span>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="https://ais-pre-x7jzb3yjgyjv6wwgvjdbdx-700003159677.asia-southeast1.run.app" target="_blank" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold text-gray-300 hover:text-white hover:bg-white/5 transition">
+                    <i data-lucide="smartphone" class="w-4 h-4"></i> লাইভ ওয়েব এমুলেটর
+                </a>
+                <a href="#download" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold bg-primary hover:bg-blue-600 text-white transition shadow-lg shadow-primary/30">
+                    <i data-lucide="download" class="w-4 h-4"></i> অ্যাপ ডাউনলোড (APK)
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-36 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center relative z-10">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-xs sm:text-sm font-semibold text-secondary mb-8 border border-secondary/20 animate-pulse">
+            <i data-lucide="sparkles" class="w-4 h-4 text-secondary"></i>
+            <span>বিকাশ • নগদ • রকেট ওয়ালেট ও ৫K মনিটাইজেশন সমর্থিত</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-5xl mx-auto leading-tight sm:leading-none">
+            বাংলাদেশের পরবর্তী প্রজন্মের <br>
+            <span class="gradient-text">সোশ্যাল নেটওয়ার্ক ও ইনকাম হাব</span>
+        </h1>
+
+        <p class="mt-6 text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            ম্যাক্সবুক (MaxBook) শুধু বন্ধুদের সাথে যুক্ত হওয়ার মাধ্যম নয়, এটি আপনার ডিজিটাল উপার্জনের প্ল্যাটফর্ম। পোস্ট করুন, রিলস শেয়ার করুন, ৫,০০০ ফলোয়ারে মনিটাইজেশন সক্রিয় করুন এবং বিকাশ/নগদ/রকেটে ইনকাম গ্রহণ করুন।
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="mt-10 flex flex-wrap items-center justify-center gap-4" id="download">
+            <a href="https://ais-pre-x7jzb3yjgyjv6wwgvjdbdx-700003159677.asia-southeast1.run.app" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-primary to-blue-600 hover:from-blue-600 hover:to-primary text-white font-bold text-lg shadow-xl shadow-primary/30 transition transform hover:-translate-y-0.5">
+                <i data-lucide="play" class="w-6 h-6"></i>
+                <span>অনলাইন এমুলেটরে চালু করুন</span>
+            </a>
+            
+            <a href="https://ais-dev-x7jzb3yjgyjv6wwgvjdbdx-700003159677.asia-southeast1.run.app" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl glass-card hover:bg-slate-800 text-white font-bold text-lg transition border border-white/10">
+                <i data-lucide="smartphone" class="w-6 h-6 text-secondary"></i>
+                <span>মোবাইল প্রিভিউ ভিউ</span>
+            </a>
+        </div>
+
+        <!-- App Feature Preview Mockup Cards -->
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            <!-- Feature 1 -->
+            <div class="glass-card p-6 rounded-3xl hover:border-secondary/40 transition">
+                <div class="w-12 h-12 rounded-2xl bg-secondary/20 flex items-center justify-center text-secondary mb-5">
+                    <i data-lucide="wallet" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">বিকাশ • নগদ • রকেট ওয়ালেট</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    অ্যাপের মধ্যেই রয়েছে সার্বক্ষণিক ওয়ালেট সিস্টেম। ডিপোজিট ও উইথড্রয়াল সরাসরি আপনার মোবাইল ফাইন্যান্সিয়াল অ্যাকাউন্টে নিরাপদে সম্পন্ন হয়।
+                </p>
+                <div class="mt-4 flex gap-2">
+                    <span class="text-xs px-2.5 py-1 rounded-lg bg-secondary/10 text-secondary font-bold">ইনস্ট্যান্ট রিকোয়েস্ট</span>
+                    <span class="text-xs px-2.5 py-1 rounded-lg bg-white/5 text-gray-300">অ্যাডমিন অ্যাপ্রুভাল</span>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="glass-card p-6 rounded-3xl hover:border-accent/40 transition">
+                <div class="w-12 h-12 rounded-2xl bg-accent/20 flex items-center justify-center text-accent mb-5">
+                    <i data-lucide="badge-check" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">ক্রিয়েটর মনিটাইজেশন ও ব্লু ব্যাজ</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    ৫,০০০ ফলোয়ার হলেই আনলক করুন মনিটাইজেশন এবং দৈনিক ক্রিয়েটর বোনাস। সাথে পাচ্ছেন অফিশিয়াল ব্লু ভেরিফাইড টিক চিহ্ন নেয়ার সুযোগ।
+                </p>
+                <div class="mt-4 flex gap-2">
+                    <span class="text-xs px-2.5 py-1 rounded-lg bg-accent/10 text-accent font-bold">৫K ফলোয়ার বোনাস</span>
+                    <span class="text-xs px-2.5 py-1 rounded-lg bg-primary/10 text-primary font-bold">ব্লু ভেরিফাইড</span>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="glass-card p-6 rounded-3xl hover:border-primary/40 transition">
+                <div class="w-12 h-12 rounded-2xl bg-primary/20 flex items-center justify-center text-primary mb-5">
+                    <i data-lucide="shield-check" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">অ্যাডমিন কন্ট্রোল ড্যাশবোর্ড</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    অ্যাডমিনদের জন্য রয়েছে ফুল ড্যাশবোর্ড—ব্যালেন্স পরিবর্তন, ডিপোজিট অনুমোদন, ভেরিফিকেশন ম্যানেজমেন্ট এবং অ্যাকাউন্ট সিকিউরিটি নিয়ন্ত্রণ।
+                </p>
+                <div class="mt-4 flex gap-2">
+                    <span class="text-xs px-2.5 py-1 rounded-lg bg-red-500/10 text-red-400 font-bold">মাস্টার অ্যাডমিন</span>
+                    <span class="text-xs px-2.5 py-1 rounded-lg bg-white/5 text-gray-300">ফুল কন্ট্রোল</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Instructions / How to Use -->
+    <section class="py-16 bg-slate-900/50 border-t border-b border-white/5 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-extrabold text-white mb-4">অ্যান্ড্রয়েড অ্যাপটি চালানোর নিয়মাবলী</h2>
+            <p class="text-gray-400 mb-8">
+                যেহেতু এটি একটি নেটিভ অ্যান্ড্রয়েড মোবাইল অ্যাপ, আপনি যেভাবে এটি ব্যবহার করতে পারেন:
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-8 h-8 rounded-xl bg-primary/20 flex items-center justify-center text-primary font-bold">১</div>
+                        <h4 class="font-bold text-white text-lg">AI Studio লাইভ এমুলেটর</h4>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        সরাসরি যেকোনো ব্রাউজার থেকে অ্যাপের সব ফিচার (পোস্ট, রিলস, ওয়ালেট, অ্যাডমিন প্যানেল) মোবাইল স্ক্রিনের মতো টেস্ট করুন।
+                    </p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-8 h-8 rounded-xl bg-secondary/20 flex items-center justify-center text-secondary font-bold">২</div>
+                        <h4 class="font-bold text-white text-lg">অ্যান্ড্রয়েড ফোনে APK ইনস্টল</h4>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        AI Studio মেন্যু থেকে <strong>Export / Generate APK</strong> অপশনে গিয়ে APK ফাইলটি নামিয়ে আপনার অ্যান্ড্রয়েড ফোনে ইনস্টল করুন।
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center text-gray-500 text-sm">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2 font-bold text-gray-400">
+                <span>MaxBook (ম্যাক্সবুক)</span> &copy; 2026. All rights reserved.
+            </div>
+            <div class="text-xs text-gray-500">
+                Crafted with Jetpack Compose & Kotlin for Android
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
